@@ -1,17 +1,32 @@
-<!DOCTYPE html>
-<html class=" mfknp idc0_345" lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="index_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="index_files/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
 
 
-    <script src="index_files/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="index_files/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
-    <script src="index_files/tabulator.min.js" integrity="sha512-xu/xzHeJxvPLt6tuy68mvBtY4XCDpGmMe1AV4+S1viFUvy0Qygmoq1yePeDenRRNRSqYx3GvucTAnsGiO0FRaA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="index_files/jquery_wrapper.min.js" integrity="sha512-Q+u5tqLUv7zbQ1QBm6Pcwc2N2PbqrRC//Ze2YGnlSe5TBbO0KrCYZ/WvgjTlNnzVtOHU9pNoztQjJxpSXa5boQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="index_files/tabulator.min.css" integrity="sha512-gHU0A38WiT7Jyubh7KcU6af64wRVBnNEB1541Ue5W050dRL/f21IWkAD8sl85nVjPyLnbffiXsCborGDQ55bYQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+            integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.4.3/js/tabulator.min.js"
+            integrity="sha512-xu/xzHeJxvPLt6tuy68mvBtY4XCDpGmMe1AV4+S1viFUvy0Qygmoq1yePeDenRRNRSqYx3GvucTAnsGiO0FRaA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.4.3/js/jquery_wrapper.min.js"
+            integrity="sha512-Q+u5tqLUv7zbQ1QBm6Pcwc2N2PbqrRC//Ze2YGnlSe5TBbO0KrCYZ/WvgjTlNnzVtOHU9pNoztQjJxpSXa5boQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.4.3/css/tabulator.min.css"
+          integrity="sha512-gHU0A38WiT7Jyubh7KcU6af64wRVBnNEB1541Ue5W050dRL/f21IWkAD8sl85nVjPyLnbffiXsCborGDQ55bYQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <script type="application/javascript">
         let rewardStatistics = [
@@ -1877,46 +1892,55 @@
         }
     </style>
 </head>
-<body class="vsc-initialized">
+<body>
 <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="rewards-tab" data-bs-toggle="tab" data-bs-target="#rewards-tab-pane" type="button" role="tab" aria-controls="rewards-tab-pane" aria-selected="true">
+        <button class="nav-link active" id="rewards-tab" data-bs-toggle="tab" data-bs-target="#rewards-tab-pane"
+                type="button"
+                role="tab" aria-controls="rewards-tab-pane" aria-selected="true">
             Reward statistics
         </button>
     </li>
     <li class="nav-item" role="presentation">
-        <button class="nav-link" id="anonymous-tab" data-bs-toggle="tab" data-bs-target="#anonymous-tab-pane" type="button" role="tab" aria-controls="anonymous-tab-pane" aria-selected="false" tabindex="-1">
+        <button class="nav-link" id="anonymous-tab" data-bs-toggle="tab" data-bs-target="#anonymous-tab-pane"
+                type="button"
+                role="tab" aria-controls="anonymous-tab-pane" aria-selected="false">
             Anonymous statistics
         </button>
     </li>
     <li class="nav-item" role="presentation">
-        <button class="nav-link" id="decimal-stats-tab" data-bs-toggle="tab" data-bs-target="#decimal-stats-tab-pane" type="button" role="tab" aria-controls="decimal-stats-tab-pane" aria-selected="false" tabindex="-1">
+        <button class="nav-link" id="decimal-stats-tab" data-bs-toggle="tab" data-bs-target="#decimal-stats-tab-pane"
+                type="button"
+                role="tab" aria-controls="decimal-stats-tab-pane" aria-selected="false">
             Decimal value statistics
         </button>
     </li>
     <li class="nav-item" role="presentation">
-        <button class="nav-link" id="decimal-war-tab" data-bs-toggle="tab" data-bs-target="#decimal-war-tab-pane" type="button" role="tab" aria-controls="decimal-war-tab-pane" aria-selected="false" tabindex="-1">
+        <button class="nav-link" id="decimal-war-tab" data-bs-toggle="tab" data-bs-target="#decimal-war-tab-pane"
+                type="button" role="tab" aria-controls="decimal-war-tab-pane" aria-selected="false">
             Decimal war
         </button>
     </li>
     <li class="nav-item" role="presentation">
-        <button class="nav-link" id="polls-tab" data-bs-toggle="tab" data-bs-target="#polls-tab-pane" type="button" role="tab" aria-controls="polls-tab-pane" aria-selected="false" tabindex="-1">
+        <button class="nav-link" id="polls-tab" data-bs-toggle="tab" data-bs-target="#polls-tab-pane"
+                type="button" role="tab" aria-controls="polls-tab-pane" aria-selected="false">
             Polls
         </button>
     </li>
     <li class="nav-item ms-auto" role="presentation">
-        <a class="nav-link" target="_blank" href="https://github.com/mikicz/p4a-portal" aria-selected="false" tabindex="-1" role="tab">GitHub</a>
+        <a class="nav-link" target="_blank" href="https://github.com/mikicz/p4a-portal">GitHub</a>
     </li>
 </ul>
 
 <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="rewards-tab-pane" role="tabpanel" aria-labelledby="rewards-tab" tabindex="0">
+    <div class="tab-pane fade show active" id="rewards-tab-pane" role="tabpanel" aria-labelledby="rewards-tab"
+         tabindex="0">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h2>Reward statistics</h2>
                     <div style="max-width: 1500px">
-                        <div id="reward-statistics" class="tabulator" role="grid" style="height: 800px;" tabulator-layout="fitColumns"><div class="tabulator-header" role="rowgroup"><div class="tabulator-header-contents" role="rowgroup"><div class="tabulator-headers" role="row" style="height: 29px;"><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="name" style="min-width: 40px; height: 29px; width: 194px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Reward name</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="count" style="min-width: 40px; width: 100px; height: 29px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Count</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="total" style="min-width: 40px; width: 200px; height: 29px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Total raised</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="raised_over_base" style="min-width: 40px; width: 200px; height: 29px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Raised over base price</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="percentage_of_total" style="min-width: 40px; width: 200px; height: 29px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Percentage of total</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="base_price" style="min-width: 40px; width: 200px; height: 29px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Base price</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="average" style="min-width: 40px; width: 200px; height: 29px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Average donation</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-frozen-rows-holder"></div></div></div><div class="tabulator-tableholder" tabindex="0" style="height: calc(100% - 30px); max-height: calc(100% - 30px);"><div class="tabulator-table" role="rowgroup" style="padding-top: 0px; padding-bottom: 2581px;"><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Digital download bundle</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">7726</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$513,300.71</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$49,740.71</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">34.46 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$60.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$66.44</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">&nbsp;</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">3471</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$124,762.21</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">NaN</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">8.37 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">NaN</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$35.94</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">P4A 2021 Socks</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">824</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$50,468.65</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$13,388.65</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">3.39 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$45.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$61.25</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">P4A 2021 T-Shirt</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">1006</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$41,592.40</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$6,382.40</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">2.79 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$35.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$41.34</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Alaska for Looking</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">250</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$32,449.40</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$7,449.40</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">2.18 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$100.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$129.80</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">P4A 2021 + the 2020 Commemorative Coin</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">823</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$29,936.50</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$5,246.50</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">2.01 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$30.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$36.37</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">P4A 2021 Enamel Pin</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">1098</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$28,964.35</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$4,808.35</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.94 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$22.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$26.38</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">April May Short Story</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">1529</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$24,246.37</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$5,898.37</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.63 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$12.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$15.86</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Sarah Urist Green's Original Collages</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">30</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$23,277.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$777.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.56 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$750.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$775.90</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">John Green's Adult Cookbook</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">1254</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$22,411.40</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$6,109.40</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.5 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$13.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$17.87</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Nerdfighter Art</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">400</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$20,453.20</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$2,453.20</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.37 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$45.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$51.13</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">More Nerdfighter Art</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">400</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$20,220.10</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$2,220.10</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.36 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$45.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$50.55</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Dinonaut to the Moon</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">80</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$20,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$0.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.34 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Exclusive Dear Hank &amp; John</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">934</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$19,280.86</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$5,270.86</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.29 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$15.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$20.64</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">P4A 2021 Laptop Decal</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">1194</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$18,903.82</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$6,963.82</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.27 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$10.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$15.83</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Hank makes even more Hanklerfish!</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">55</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$18,304.57</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,804.57</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.23 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$300.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$332.81</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Dinonaut to Mars</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">33</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$17,124.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$624.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.15 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$500.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$518.91</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Dinonaut to a Mystery Planet</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">15</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$16,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.07 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$1,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$1,066.67</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Self Care Bunny Coaster</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">865</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$15,774.63</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$2,799.63</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.06 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$15.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$18.24</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">P4A 2021 Pressed Pennies</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">536</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$14,972.78</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,572.78</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1.01 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$25.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$27.93</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">DH&amp;J Personal Message</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">29</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$14,857.10</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$6,157.10</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$300.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$512.31</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Another Trivia Night with John and Stan!</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">50</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$14,840.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$2,340.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">1 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$296.80</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Last batch of Nerdfighter Art</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">280</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$13,905.46</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,305.46</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.93 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$45.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$49.66</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Trivia Night with John and Stan!</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">50</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$12,650.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$150.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.85 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$253.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">P4A 2021 Magnet Poetry</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">441</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$12,563.65</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,538.65</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.84 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$25.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$28.49</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">John Green's workout playlist</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">830</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$11,480.30</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$4,840.30</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.77 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$8.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$13.83</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Hank makes more Hanklerfish!</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">45</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$11,250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$0.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.76 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Character We Mail to You</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">106</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$10,750.79</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$150.79</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.72 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$100.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$101.42</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Life's Library Books</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">51</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$10,670.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$470.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.72 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$200.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$209.22</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Last Sarah Urist Green's Original Collages</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">10</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$10,250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.69 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$1,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$1,025.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Thought Cafe Stickers</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">591</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$9,891.41</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$3,981.41</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.66 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$10.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$16.74</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">More Hanklerfish Art</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">56</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$9,800.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$0.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.66 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$175.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$175.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">John's circle drawing - Print</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">200</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$9,755.55</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$755.55</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.65 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$45.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$48.78</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Signed copy of a John Green book (in English)</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">100</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$9,696.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,196.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.65 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$85.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$96.96</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Dear Katherine &amp; Sarah</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">552</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$9,460.63</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,180.63</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.64 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$15.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$17.14</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">P4A 2021 Commemorative Coin</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">387</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$9,209.71</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,469.71</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.62 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$20.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$23.80</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">More Sarah Urist Green's Original Collages</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">10</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$9,200.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$200.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.62 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$900.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$920.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">More John's circle drawing - original</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">5</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$9,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">-$1,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.6 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$2,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$1,800.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Signed copy of a John Green book (in English)</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">100</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$8,945.08</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$945.08</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.6 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$80.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$89.45</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Animated into a Crash Course Episode</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">21</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$8,500.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$100.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.57 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$400.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$404.76</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">P4A 2021 Poster</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">327</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$8,019.88</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,479.88</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.54 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$20.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$24.53</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">SOLD OUT Hanklerfish Art</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">50</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$7,550.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$50.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.51 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$150.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$151.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Beanie Sandfurbs Coaster</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">419</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$7,507.30</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,222.30</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.5 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$15.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$17.92</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">2020 Participation Award</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">150</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$7,085.04</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,835.04</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.48 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$35.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$47.23</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Microcosmos Soundtrack      Vol. 1 &amp; 2</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">476</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$7,041.84</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$853.84</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.47 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$13.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$14.79</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">John &amp; Sarah's Podcast</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">436</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$6,568.42</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$3,516.42</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.44 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$7.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$15.07</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Even More Hanklerfish Art</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">25</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$6,250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$0.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.42 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$250.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Hank's TikTok drafts</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">345</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$6,216.70</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,041.70</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.42 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$15.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$18.02</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Gumball Mike pin</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">230</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$6,079.52</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,249.52</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.41 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$21.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$26.43</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Last chance: DH&amp;J Personal Message</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">11</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$6,055.55</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$555.55</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.41 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$500.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$550.50</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">Last John Circle Drawings!</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">3</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$6,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$0.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.4 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$2,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$2,000.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-even" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">John's circle drawing - more prints!</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">100</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$5,955.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$455.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.4 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$55.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$59.55</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div><div class="tabulator-row tabulator-selectable tabulator-row-odd" role="row"><div class="tabulator-cell" role="gridcell" style="width: 194px; height: 29px;" tabulator-field="name">P4A Recap Video Thank You</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 100px; height: 29px;" tabulator-field="count">50</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="total">$5,113.22</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="raised_over_base">$1,363.22</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="percentage_of_total">0.34 %</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="base_price">$75.00</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span><div class="tabulator-cell" role="gridcell" style="width: 200px; height: 29px;" tabulator-field="average">$102.26</div><span class="tabulator-col-resize-handle" style="height: 29px;"></span></div></div></div></div>
+                        <table id="reward-statistics"></table>
                     </div>
                 </div>
             </div>
@@ -1929,19 +1953,20 @@
                 <div class="col">
                     <h2>Anonymous statistics</h2>
                     <div style="max-width: 500px; margin: 0 auto;">
-                        <div id="anonymous-statistics" class="tabulator" role="grid" tabulator-layout="fitColumns"><div class="tabulator-header" role="rowgroup"><div class="tabulator-header-contents" role="rowgroup"><div class="tabulator-headers" role="row"><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="who" style="min-width: 40px; width: 40px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Who</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="count" style="min-width: 40px; width: 100px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Count</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="total" style="min-width: 40px; width: 200px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Total raised</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span></div><div class="tabulator-frozen-rows-holder"></div></div></div><div class="tabulator-tableholder" tabindex="0" style="height: 0px;"><div class="tabulator-table" role="rowgroup"></div></div></div>
+                        <table id="anonymous-statistics"></table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="tab-pane fade" id="decimal-stats-tab-pane" role="tabpanel" aria-labelledby="decimal-stats-tab" tabindex="0">
+    <div class="tab-pane fade" id="decimal-stats-tab-pane" role="tabpanel" aria-labelledby="decimal-stats-tab"
+         tabindex="0">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h2>Decimal value statistics</h2>
                     <div style="max-width: 500px; margin: 0 auto">
-                        <div id="decimal-statistics" class="tabulator" role="grid" style="height: 800px;" tabulator-layout="fitColumns"><div class="tabulator-header" role="rowgroup"><div class="tabulator-header-contents" role="rowgroup"><div class="tabulator-headers" role="row"><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="after_decimal" style="min-width: 40px; width: 40px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">After decimal</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="amount" style="min-width: 40px; width: 40px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Amount</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span></div><div class="tabulator-frozen-rows-holder"></div></div></div><div class="tabulator-tableholder" tabindex="0" style="height: calc(100% - 0px); max-height: calc(100% - 0px);"><div class="tabulator-table" role="rowgroup"></div></div></div>
+                        <table id="decimal-statistics"></table>
                     </div>
                 </div>
             </div>
@@ -1954,16 +1979,15 @@
             </div>
             <div class="row">
                 <div class="col">
-                        <h3>Overall</h3>
+                    <h3>Overall</h3>
                     <div style="max-width: 500px; margin-top: 50px">
-
-                        <div id="decimal-war-statistics" class="tabulator" role="grid" tabulator-layout="fitColumns"><div class="tabulator-header" role="rowgroup"><div class="tabulator-header-contents" role="rowgroup"><div class="tabulator-headers" role="row"><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="after_decimal" style="min-width: 40px; width: 40px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Total after decimal</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="minutes" style="min-width: 40px; width: 40px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Minutes</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="percentage_of_total" style="min-width: 40px; width: 40px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Percentage of total</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span></div><div class="tabulator-frozen-rows-holder"></div></div></div><div class="tabulator-tableholder" tabindex="0" style="height: 0px;"><div class="tabulator-table" role="rowgroup"></div></div></div>
+                        <table id="decimal-war-statistics"></table>
                     </div>
                 </div>
                 <div class="col">
                     <h3>During stream</h3>
                     <div style="max-width: 500px; margin-top: 50px">
-                        <div id="decimal-war-stream-statistics" class="tabulator" role="grid" tabulator-layout="fitColumns"><div class="tabulator-header" role="rowgroup"><div class="tabulator-header-contents" role="rowgroup"><div class="tabulator-headers" role="row"><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="after_decimal" style="min-width: 40px; width: 40px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Total after decimal</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="minutes" style="min-width: 40px; width: 40px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Minutes</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span><div class="tabulator-col tabulator-sortable tabulator-col-sorter-element" role="columnheader" aria-sort="none" tabulator-field="percentage_of_total" style="min-width: 40px; width: 40px;"><div class="tabulator-col-content"><div class="tabulator-col-title-holder"><div class="tabulator-col-title">Percentage of total</div><div class="tabulator-col-sorter"><div class="tabulator-arrow"></div></div></div></div></div><span class="tabulator-col-resize-handle"></span></div><div class="tabulator-frozen-rows-holder"></div></div></div><div class="tabulator-tableholder" tabindex="0" style="height: 0px;"><div class="tabulator-table" role="rowgroup"></div></div></div>
+                        <table id="decimal-war-stream-statistics"></table>
                     </div>
                 </div>
             </div>
@@ -1990,7 +2014,7 @@
                         <tbody>
                         
                             <tr>
-                                <td rowspan="4">What's the best useless superpower?</td>
+                                <td rowspan="4">What&#x27;s the best useless superpower?</td>
                                 <td rowspan="4">Feb. 12, 2021, 9:24 p.m.</td>
                                 <td rowspan="4">Feb. 12, 2021, 9:32 p.m.</td>
                                 <td rowspan="4">1670.00</td>
@@ -2001,8 +2025,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $698.00
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2012,7 +2036,7 @@
                                     </td>
                                 <td>
                                     $454.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2022,7 +2046,7 @@
                                     </td>
                                 <td>
                                     $155.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2032,7 +2056,7 @@
                                     </td>
                                 <td>
                                     $363.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2047,7 +2071,7 @@
                                     </td>
                                 <td>
                                     $1,399.49
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2057,7 +2081,7 @@
                                     </td>
                                 <td>
                                     $1,128.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2067,24 +2091,24 @@
                                     </td>
                                 <td>
                                     $477.20
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
                                         <tr>
                                     
-                                <td><strong>John Green's peanut butter face
+                                <td><strong>John Green&#x27;s peanut butter face
                                     
                                         </strong></td>
                                 <td><strong>
                                     $1,463.00
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                         
                             <tr>
-                                <td rowspan="3">Coolest animal combination that you'd also want for a pet</td>
+                                <td rowspan="3">Coolest animal combination that you&#x27;d also want for a pet</td>
                                 <td rowspan="3">Feb. 12, 2021, 9:56 p.m.</td>
                                 <td rowspan="3">Feb. 12, 2021, 10:05 p.m.</td>
                                 <td rowspan="3">2285.05</td>
@@ -2094,7 +2118,7 @@
                                     </td>
                                 <td>
                                     $805.88
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2104,7 +2128,7 @@
                                     </td>
                                 <td>
                                     $347.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2115,8 +2139,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $1,132.17
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                         
@@ -2131,7 +2155,7 @@
                                     </td>
                                 <td>
                                     $1,112.42
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2142,8 +2166,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $2,362.12
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2153,7 +2177,7 @@
                                     </td>
                                 <td>
                                     $825.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2163,7 +2187,7 @@
                                     </td>
                                 <td>
                                     $854.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2173,7 +2197,7 @@
                                     </td>
                                 <td>
                                     $928.69
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2189,8 +2213,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $1,510.00
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2200,7 +2224,7 @@
                                     </td>
                                 <td>
                                     $1,178.69
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2215,7 +2239,7 @@
                                     </td>
                                 <td>
                                     $306.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2226,8 +2250,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $667.00
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2237,7 +2261,7 @@
                                     </td>
                                 <td>
                                     $195.22
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2247,7 +2271,7 @@
                                     </td>
                                 <td>
                                     $215.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2257,12 +2281,12 @@
                                     </td>
                                 <td>
                                     $331.69
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
                             <tr>
-                                <td rowspan="4">where should taylor's eye go?</td>
+                                <td rowspan="4">where should taylor&#x27;s eye go?</td>
                                 <td rowspan="4">Feb. 13, 2021, 3:27 a.m.</td>
                                 <td rowspan="4">Feb. 13, 2021, 3:33 a.m.</td>
                                 <td rowspan="4">356.99</td>
@@ -2273,8 +2297,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $225.99
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2284,7 +2308,7 @@
                                     </td>
                                 <td>
                                     $49.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2294,7 +2318,7 @@
                                     </td>
                                 <td>
                                     $9.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2304,7 +2328,7 @@
                                     </td>
                                 <td>
                                     $73.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2320,8 +2344,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $4,346.64
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2331,7 +2355,7 @@
                                     </td>
                                 <td>
                                     $3,318.08
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2346,7 +2370,7 @@
                                     </td>
                                 <td>
                                     $472.01
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2356,7 +2380,7 @@
                                     </td>
                                 <td>
                                     $58.69
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2367,8 +2391,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $525.00
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2378,7 +2402,7 @@
                                     </td>
                                 <td>
                                     $67.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2393,7 +2417,7 @@
                                     </td>
                                 <td>
                                     $274.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2404,8 +2428,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $312.00
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2415,7 +2439,7 @@
                                     </td>
                                 <td>
                                     $159.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2425,12 +2449,12 @@
                                     </td>
                                 <td>
                                     $22.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
                             <tr>
-                                <td rowspan="4">Supporting cast members in Kallie and Blake's art?</td>
+                                <td rowspan="4">Supporting cast members in Kallie and Blake&#x27;s art?</td>
                                 <td rowspan="4">Feb. 13, 2021, 7:20 a.m.</td>
                                 <td rowspan="4">Feb. 13, 2021, 7:40 a.m.</td>
                                 <td rowspan="4">294.95</td>
@@ -2440,7 +2464,7 @@
                                     </td>
                                 <td>
                                     $65.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2451,8 +2475,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $141.95
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2462,7 +2486,7 @@
                                     </td>
                                 <td>
                                     $80.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2472,7 +2496,7 @@
                                     </td>
                                 <td>
                                     $8.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2487,7 +2511,7 @@
                                     </td>
                                 <td>
                                     $280.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2497,7 +2521,7 @@
                                     </td>
                                 <td>
                                     $0.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2508,8 +2532,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $1,342.00
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2519,7 +2543,7 @@
                                     </td>
                                 <td>
                                     $1,149.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2535,8 +2559,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $1,796.23
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2546,7 +2570,7 @@
                                     </td>
                                 <td>
                                     $179.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2561,7 +2585,7 @@
                                     </td>
                                 <td>
                                     $693.22
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2571,7 +2595,7 @@
                                     </td>
                                 <td>
                                     $495.04
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2581,7 +2605,7 @@
                                     </td>
                                 <td>
                                     $375.35
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2592,8 +2616,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $1,114.69
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                         
@@ -2608,7 +2632,7 @@
                                     </td>
                                 <td>
                                     $3,036.72
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2619,8 +2643,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $3,106.25
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                         
@@ -2636,8 +2660,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $11,526.83
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2647,7 +2671,7 @@
                                     </td>
                                 <td>
                                     $10,228.55
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2662,7 +2686,7 @@
                                     </td>
                                 <td>
                                     $3,260.19
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2673,8 +2697,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $3,862.12
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                         
@@ -2690,8 +2714,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $24,403.40
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2701,7 +2725,7 @@
                                     </td>
                                 <td>
                                     $24,116.81
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2716,7 +2740,7 @@
                                     </td>
                                 <td>
                                     $6,985.75
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2726,7 +2750,7 @@
                                     </td>
                                 <td>
                                     $5,488.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2737,8 +2761,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $7,172.98
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                         
@@ -2754,8 +2778,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $10,192.04
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2765,7 +2789,7 @@
                                     </td>
                                 <td>
                                     $2,024.58
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2781,8 +2805,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $13,298.17
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2792,12 +2816,12 @@
                                     </td>
                                 <td>
                                     $6,238.65
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
                             <tr>
-                                <td rowspan="5">What should go on Hank's face?</td>
+                                <td rowspan="5">What should go on Hank&#x27;s face?</td>
                                 <td rowspan="5">Feb. 14, 2021, 6:02 a.m.</td>
                                 <td rowspan="5">Feb. 14, 2021, 6:17 a.m.</td>
                                 <td rowspan="5">11612.76</td>
@@ -2807,7 +2831,7 @@
                                     </td>
                                 <td>
                                     $336.69
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2817,7 +2841,7 @@
                                     </td>
                                 <td>
                                     $3,814.59
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2827,7 +2851,7 @@
                                     </td>
                                 <td>
                                     $686.20
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2837,7 +2861,7 @@
                                     </td>
                                 <td>
                                     $479.55
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2848,8 +2872,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $6,295.73
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                         
@@ -2864,7 +2888,7 @@
                                     </td>
                                 <td>
                                     $303.12
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2875,8 +2899,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $410.00
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                         
@@ -2892,8 +2916,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $580.69
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2903,7 +2927,7 @@
                                     </td>
                                 <td>
                                     $422.00
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2918,7 +2942,7 @@
                                     </td>
                                 <td>
                                     $1,710.21
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                                     
@@ -2929,8 +2953,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $5,074.91
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                         
@@ -2946,8 +2970,8 @@
                                         </strong></td>
                                 <td><strong>
                                     $35,272.88
-                                            
-                                                </strong></td>
+                                    
+                                        </strong></td>
                                 </tr>
                                 
                                     
@@ -2957,7 +2981,7 @@
                                     </td>
                                 <td>
                                     $34,522.07
-                                            </td>
+                                    </td>
                                 </tr>
                                 
                         
@@ -2970,9 +2994,8 @@
 </div>
 
 
+</body>
+
+</html>
 
 
-
-
-
-</body></html>
